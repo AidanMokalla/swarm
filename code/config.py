@@ -37,7 +37,7 @@ class Config:
         "solitary", "compassionate", "self-interested", "nervous", "calm",
     )
     vector_kind: str = "response_avg_diff"  # or prompt_avg_diff / prompt_last_diff
-    persona_trait: str = "outgoing"  # which trait to steer with (any of persona_traits)
+    persona_trait: str = "careless"  # which trait to steer with (any of persona_traits)
     vectors_dir: str = "vectors"  # relative to the cwd (run from code/)
     layer: int = 19
     alpha: float = 1  # paper's default coef; the vector norm at layer 19 (row 20) is ~23 for 'outgoing'
