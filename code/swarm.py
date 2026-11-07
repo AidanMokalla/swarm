@@ -113,8 +113,7 @@ def main():
         "random": random_matched_norm(persona_vector, cfg.seed),
         "none": None,
     }[cfg.steering_mode]
-    with ThreadPoolExecutor(len(cfg.devices)) as pool:  # load replicas in parallel
-        replicas = list(pool.map(lambda device: load_replica(cfg, device), cfg.devices))
+    replicas = [load_replica(cfg, device) for device in cfg.devices]  # sequential: loading isn't thread-safe
     results = run_swarm(cfg, replicas, persona_vector, steer_vector)
     out_dir = Path(cfg.output_dir)
     out_dir.mkdir(parents=True, exist_ok=True)

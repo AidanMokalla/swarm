@@ -26,12 +26,15 @@ class Replica:
 
 def load_replica(cfg, device):
     tokenizer = AutoTokenizer.from_pretrained(cfg.model_id, cache_dir=cfg.cache_dir)
+    # No device_map: it routes through accelerate's dispatch_model (meta-tensor errors on some
+    # versions). Load on CPU, then .to(device). Call sequentially, never from threads:
+    # init_empty_weights patches torch globally and isn't thread-safe.
     model = AutoModelForCausalLM.from_pretrained(
         cfg.model_id,
         cache_dir=cfg.cache_dir,
-        torch_dtype=getattr(torch, cfg.dtype),
-        device_map={"": device},
-    ).eval()
+        torch_dtype=getattr(torch, cfg.dtype),  # `dtype=` kwarg only exists in new transformers
+        low_cpu_mem_usage=True,
+    ).to(device).eval()
     return Replica(model, tokenizer, device)
 
 
