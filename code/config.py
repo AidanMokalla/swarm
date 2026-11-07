@@ -5,6 +5,7 @@ from typing import Any, Optional, Tuple
 # Fields that define the loaded model replicas (loaded once per sweep) -> not sweepable.
 REPLICA_FIELDS = ("model_id", "dtype", "devices", "cache_dir")
 
+# hi :)
 
 @dataclass(frozen=True)
 class Config:
