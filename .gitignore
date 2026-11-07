@@ -3,3 +3,10 @@
 
 # Ada Library Information
 *.ali
+
+# Python
+__pycache__/
+*.pyc
+
+# Secrets
+.env
