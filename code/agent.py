@@ -2,12 +2,12 @@
 
 LAYER CONVENTION (the only one used in this codebase): `layer` is the 0-based
 index into model.model.layers; hooks act on the OUTPUT of that decoder layer.
-Persona-vector files (safety-research/persona_vectors) use the hidden_states
-convention (hidden_states[0] = embeddings), so decoder layer l == row l + 1 of
-those files. `load_persona_vector` does the +1. Avoid the last layer: HF's final
-hidden_states entry has the final norm applied, so it isn't layers[-1]'s output.
+Persona-vector files (HF dataset xiachongfeng/persona) use the hidden_states
+convention (row 0 = embeddings; checked: row-0 norm ~0.04), so decoder layer l ==
+row l + 1 of those files. `load_persona_vector` does the +1. Avoid the last layer:
+HF's final hidden_states entry has the final norm applied, so it isn't layers[-1]'s output.
 
-Vector file format: torch tensor, [n_layers + 1, hidden] (repo format) or [hidden]
+Vector file format: torch tensor, [n_layers + 1, hidden] (downloaded format) or [hidden]
 (already for the chosen layer).
 """
 import math
