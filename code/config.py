@@ -13,7 +13,15 @@ class Config:
 
     # steering. `layer` = 0-based index into model.model.layers (output of that
     # decoder layer). Persona-vectors repo "layer 20" (hidden_states idx) -> 19 here.
-    persona_vector_path: str = "vectors/evil_response_avg_diff.pt"  # [n_layers+1, hidden] or [hidden]
+    # Vector file = <vectors_dir>/<persona_trait>_<vector_kind>.pt, [n_layers+1, hidden] or [hidden].
+    # The official repo ships NO precomputed vectors; generate with its pipeline (see download_model.py).
+    vectors_dir: str = "vectors"
+    persona_trait: str = "evil"
+    vector_kind: str = "response_avg_diff"  # repo's generate_vec.py output suffix (used in paper)
+    trait_data_url: str = (  # repo's trait artifacts (instructions + questions), generation input
+        "https://raw.githubusercontent.com/safety-research/persona_vectors/main/"
+        "data_generation/trait_data_extract/{trait}.json"
+    )
     layer: int = 19
     alpha: float = 2.0
     steering_mode: str = "persona"  # 'persona' | 'random' (matched norm) | 'none'
@@ -36,6 +44,14 @@ class Config:
     seed: int = 0
 
     output_dir: str = "results"
+
+    @property
+    def persona_vector_path(self) -> str:
+        return f"{self.vectors_dir}/{self.persona_trait}_{self.vector_kind}.pt"
+
+    @property
+    def trait_data_path(self) -> str:
+        return f"{self.vectors_dir}/{self.persona_trait}_trait_data.json"
 
 
 CFG = Config()
