@@ -83,7 +83,8 @@ def run_swarm(cfg, replicas, persona_vector, steer_vector):
         )
         histories[i].append({"role": "assistant", "content": text})
         return {"turn": turn, "agent": i, "hop": hops[i], "steered": steered,
-                **measurement, "received": message, "text": text}
+                **measurement, "system_prompt": histories[i][0]["content"],
+                "received": message, "text": text}
 
     for turn in range(cfg.n_turns):
         messages = {i: user_message(i, turn) for i in range(n)}
@@ -101,7 +102,13 @@ def run_swarm(cfg, replicas, persona_vector, steer_vector):
         log.extend((turn, row["agent"], row["text"]) for row in turn_rows)
         rows.extend(turn_rows)
         print(f"turn {turn}: agents {sorted(acting)}")
-    return pd.DataFrame(rows).assign(steering_mode=cfg.steering_mode), histories
+    run_metadata = {
+        "persona_trait": cfg.persona_trait, "layer": cfg.layer, "alpha": cfg.alpha,
+        "steering_mode": cfg.steering_mode, "n_agents": cfg.n_agents,
+        "topology": cfg.topology, "n_turns": cfg.n_turns,
+        "seed_prompt": cfg.seed_prompt, "temperature": cfg.temperature,
+    }
+    return pd.DataFrame(rows).assign(**run_metadata), histories
 
 
 def main():
@@ -120,7 +127,7 @@ def main():
     results.to_csv(out_dir / f"{cfg.steering_mode}.csv", index=False)
     (out_dir / f"{cfg.steering_mode}_config.json").write_text(json.dumps(dataclasses.asdict(cfg), indent=2))
     (out_dir / f"{cfg.steering_mode}_transcripts.json").write_text(json.dumps(histories, indent=2))
-    print(results.drop(columns=["received", "text"]).to_string())
+    print(results.drop(columns=["system_prompt", "seed_prompt", "received", "text"]).to_string())
 
 
 if __name__ == "__main__":
