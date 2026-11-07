@@ -83,7 +83,7 @@ def run_swarm(cfg, replicas, persona_vector, steer_vector):
         )
         histories[i].append({"role": "assistant", "content": text})
         return {"turn": turn, "agent": i, "hop": hops[i], "steered": steered,
-                **measurement, "text": text}
+                **measurement, "received": message, "text": text}
 
     for turn in range(cfg.n_turns):
         messages = {i: user_message(i, turn) for i in range(n)}
@@ -101,7 +101,7 @@ def run_swarm(cfg, replicas, persona_vector, steer_vector):
         log.extend((turn, row["agent"], row["text"]) for row in turn_rows)
         rows.extend(turn_rows)
         print(f"turn {turn}: agents {sorted(acting)}")
-    return pd.DataFrame(rows).assign(steering_mode=cfg.steering_mode)
+    return pd.DataFrame(rows).assign(steering_mode=cfg.steering_mode), histories
 
 
 def main():
@@ -114,12 +114,13 @@ def main():
         "none": None,
     }[cfg.steering_mode]
     replicas = [load_replica(cfg, device) for device in cfg.devices]  # sequential: loading isn't thread-safe
-    results = run_swarm(cfg, replicas, persona_vector, steer_vector)
+    results, histories = run_swarm(cfg, replicas, persona_vector, steer_vector)
     out_dir = Path(cfg.output_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     results.to_csv(out_dir / f"{cfg.steering_mode}.csv", index=False)
     (out_dir / f"{cfg.steering_mode}_config.json").write_text(json.dumps(dataclasses.asdict(cfg), indent=2))
-    print(results.drop(columns="text").to_string())
+    (out_dir / f"{cfg.steering_mode}_transcripts.json").write_text(json.dumps(histories, indent=2))
+    print(results.drop(columns=["received", "text"]).to_string())
 
 
 if __name__ == "__main__":
