@@ -11,6 +11,8 @@ Research in different types of trait/behavior contagion in multi-agent systems h
 
 There are three well-understood ways to induce a behavior in a model: through prompting, through fine-tuning of the model, or through activation steering. 
 
+**Prompting** 
+
 
 
 [SPAR "Who's Steering Whom?" (Fall 2026)](https://sparai.org/projects/f26/recCfCsQ3SwjrjEc5/)
