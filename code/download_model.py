@@ -34,8 +34,8 @@ def download_persona_vectors():
     repo_dir = f"vectors/{CFG.model_id.split('/')[-1]}"
     Path(CFG.vectors_dir).mkdir(parents=True, exist_ok=True)
     for trait in CFG.persona_traits:
-        name = f"{trait}_{CFG.vector_kind}.pt"
-        target = Path(CFG.vectors_dir) / name
+        target = Path(CFG.vector_path(trait))
+        name = target.name
         if target.exists():
             print(f"{target} already present")
         else:

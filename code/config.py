@@ -1,10 +1,24 @@
 """Single source of truth for every setting. Edit by hand; nothing overrides these."""
 from dataclasses import dataclass
-from typing import Optional, Tuple
+from typing import Any, Optional, Tuple
+
+# Fields that define the loaded model replicas (loaded once per sweep) -> not sweepable.
+REPLICA_FIELDS = ("model_id", "dtype", "devices", "cache_dir")
 
 
 @dataclass(frozen=True)
 class Config:
+    # Sweep: tuple of (field_name, values) pairs; any Config field except REPLICA_FIELDS and
+    # `sweep` itself. One run per cartesian-product combo; () -> a single run with this config.
+    # Format: (("alpha", (1, 2, 4)), ("persona_trait", ("outgoing", "solitary")))
+    # steering_mode 'none' ignores alpha, so it is run once per remaining combo (see swarm.py).
+    sweep: Tuple[Tuple[str, Tuple[Any, ...]], ...] = (
+        ("steering_mode", ("persona", "random", "none")),
+        ("alpha", (1, 2)),
+        ("persona_trait", ("outgoing", "solitary")),
+    )  # swept values replace the base values below; other candidates: seed, layer, topology, n_agents
+
+
     # model
     model_id: str = "Qwen/Qwen2.5-7B-Instruct"
     cache_dir: Optional[str] = None  # None -> default HF cache
@@ -25,7 +39,6 @@ class Config:
     vector_kind: str = "response_avg_diff"  # or prompt_avg_diff / prompt_last_diff
     persona_trait: str = "outgoing"  # which trait to steer with (any of persona_traits)
     vectors_dir: str = "vectors"  # relative to the cwd (run from code/)
-    persona_vector_path: str = f"{vectors_dir}/{persona_trait}_{vector_kind}.pt"
     layer: int = 19
     alpha: float = 1  # paper's default coef; the vector norm at layer 19 (row 20) is ~23 for 'outgoing'
     steering_mode: str = "persona"  # 'persona' | 'random' (matched norm) | 'none'
@@ -48,6 +61,16 @@ class Config:
     seed: int = 0
 
     output_dir: str = "results"
+
+    # plotting: metadata column to facet plot_results.py on (None -> single panel)
+    plot_facet: Optional[str] = "persona_trait"
+
+    def vector_path(self, trait):
+        return f"{self.vectors_dir}/{trait}_{self.vector_kind}.pt"
+
+    @property
+    def persona_vector_path(self):
+        return self.vector_path(self.persona_trait)
 
 
 CFG = Config()
