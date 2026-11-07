@@ -1,5 +1,5 @@
 torch>=2.1
-transformers>=4.45
+transformers>=4.51.1
 accelerate>=0.30
 huggingface_hub>=0.23
 numpy
@@ -7,7 +7,7 @@ pandas
 matplotlib
 seaborn
 # official persona_vectors repo (eval_persona imports vllm, peft, datasets, openai, fire, yaml)
-vllm  # pins torch==2.6.0 itself; see persona_vectors/requirements.txt (tested: vllm==0.8.5.post1)
+vllm==0.8.5.post1  # repo's tested pin; pulls torch==2.6.0, needs transformers>=4.51.1
 peft
 datasets
 openai
