@@ -13,7 +13,14 @@ class Config:
 
     # steering. `layer` = 0-based index into model.model.layers (output of that
     # decoder layer). Persona-vectors repo "layer 20" (hidden_states idx) -> 19 here.
-    persona_vector_path: str = "vectors/evil_response_avg_diff.pt"  # [n_layers+1, hidden] or [hidden]
+    # Persona vectors (Chen et al. 2025) for Qwen2.5-7B-Instruct, fetched by download_model.py.
+    # The official repo doesn't ship them (gitignored); this is a HF mirror of the same files.
+    vectors_dir: str = "vectors"
+    vectors_url: str = "https://huggingface.co/datasets/anthonym21/qwen-persona-vectors/resolve/main"
+    vector_traits: Tuple[str, ...] = ("evil", "sycophantic", "hallucinating")
+    vector_kind: str = "response_avg_diff"  # variant used in the paper
+    persona_trait: str = "evil"  # which trait to steer with
+    persona_vector_path: str = f"{vectors_dir}/{persona_trait}_{vector_kind}.pt"  # [n_layers+1, hidden] or [hidden]
     layer: int = 19
     alpha: float = 2.0
     steering_mode: str = "persona"  # 'persona' | 'random' (matched norm) | 'none'
