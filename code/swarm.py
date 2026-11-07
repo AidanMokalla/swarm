@@ -84,6 +84,12 @@ def run_swarm(cfg, replicas, persona_vector, steer_vector):
             steer_vector if steered else None, persona_vector,
         )
         histories[i].append({"role": "assistant", "content": text})
+        print(  # single call so threads on different GPUs don't interleave mid-message
+            f"\n--- turn {turn} | agent {i} | hop {hops[i]}{' | STEERED' if steered else ''}"
+            f" | prompt_proj {measurement['prompt_proj']:+.2f} gen_proj {measurement['gen_proj']:+.2f}\n"
+            f"<< received:\n{message}\n>> reply:\n{text}",
+            flush=True,
+        )
         return {"turn": turn, "agent": i, "hop": hops[i], "steered": steered,
                 **measurement, "system_prompt": histories[i][0]["content"],
                 "received": message, "text": text}
@@ -96,6 +102,8 @@ def run_swarm(cfg, replicas, persona_vector, steer_vector):
         if not acting:
             break
 
+        print(f"\n===== turn {turn}: agents {sorted(acting)} =====", flush=True)
+
         def run_group(replica_idx):  # sequential within a replica (one GPU)
             return [run_agent(i, turn, messages[i]) for i in acting if i % len(replicas) == replica_idx]
 
@@ -103,7 +111,6 @@ def run_swarm(cfg, replicas, persona_vector, steer_vector):
             turn_rows = [row for group in pool.map(run_group, range(len(replicas))) for row in group]
         log.extend((turn, row["agent"], row["text"]) for row in turn_rows)
         rows.extend(turn_rows)
-        print(f"turn {turn}: agents {sorted(acting)}")
     run_metadata = {
         "persona_trait": cfg.persona_trait, "layer": cfg.layer, "alpha": cfg.alpha,
         "steering_mode": cfg.steering_mode, "n_agents": cfg.n_agents,
