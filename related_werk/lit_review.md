@@ -5,7 +5,13 @@ Research in different types of trait/behavior contagion in multi-agent systems h
 1) How the trait is induced in the source model
 2) What transmission channel is being measured
 3) What and how the receiver of a trait is measured
-4) What topology
+4) What topology or topologies the study uses
+
+## How the trait is induced
+
+There are three well-understood ways to induce a behavior in a model: through prompting, through fine-tuning of the model, or through activation steering. 
+
+
 
 [SPAR "Who's Steering Whom?" (Fall 2026)](https://sparai.org/projects/f26/recCfCsQ3SwjrjEc5/)
 
