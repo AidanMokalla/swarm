@@ -27,7 +27,7 @@ class Config:
     vectors_dir: str = "vectors"  # relative to the cwd (run from code/)
     persona_vector_path: str = f"{vectors_dir}/{persona_trait}_{vector_kind}.pt"
     layer: int = 19
-    alpha: float = 1.5  # paper's default coef; the vector norm at layer 19 (row 20) is ~23 for 'outgoing'
+    alpha: float = 1  # paper's default coef; the vector norm at layer 19 (row 20) is ~23 for 'outgoing'
     steering_mode: str = "persona"  # 'persona' | 'random' (matched norm) | 'none'
 
     # swarm
