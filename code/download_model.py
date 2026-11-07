@@ -64,13 +64,7 @@ def vector_commands(trait):
     return [*evals, generate], Path(CFG.persona_repo_dir) / save_dir / f"{trait}_{CFG.vector_kind}.pt"
 
 
-def generate_persona_vectors():
-    missing = [trait for trait in CFG.vector_traits if not vector_path(trait).exists()]
-    for trait in set(CFG.vector_traits) - set(missing):
-        print(f"{vector_path(trait)} already present")
-    if not missing:
-        return
-    check_credentials()  # before spending GPU time
+def generate_persona_vectors(missing):
     env = {**os.environ, "CUDA_VISIBLE_DEVICES": CFG.vector_gpu}
     if CFG.cache_dir:  # absolute since cwd changes
         env["HF_HUB_CACHE"] = str(Path(CFG.cache_dir).resolve())
@@ -86,8 +80,13 @@ def generate_persona_vectors():
 
 def main():
     assert (Path(CFG.persona_repo_dir) / "generate_vec.py").exists(), f"{CFG.persona_repo_dir}/ missing (vendored repo)"
+    missing = [trait for trait in CFG.vector_traits if not vector_path(trait).exists()]
+    for trait in set(CFG.vector_traits) - set(missing):
+        print(f"{vector_path(trait)} already present")
+    if missing:
+        check_credentials()  # fail before downloading / spending GPU time
     download_model()
-    generate_persona_vectors()
+    generate_persona_vectors(missing)
 
 
 if __name__ == "__main__":
