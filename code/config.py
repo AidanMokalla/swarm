@@ -63,9 +63,6 @@ class Config:
 
     output_dir: str = "results"
 
-    # plotting: metadata column to facet plot_results.py on (None -> single panel)
-    plot_facet: Optional[str] = "persona_trait"
-
     def vector_path(self, trait):
         return f"{self.vectors_dir}/{trait}_{self.vector_kind}.pt"
 
