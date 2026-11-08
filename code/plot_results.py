@@ -61,16 +61,18 @@ def make_plot(results, out_dir):
     varying = varying_columns(results)
     hue = ask_choice("color by", varying, "steering_mode" if "steering_mode" in varying else None) if varying else None
     left = [c for c in varying if c != hue]
-    facet = ask_choice("facet (one panel per value) by", left, None) if left else None
-    averaged = [c for c in left if c != facet]
+    col = ask_choice("facet columns (one panel per value) by", left, "steering_mode" if "steering_mode" in left else None) if left else None
+    left = [c for c in left if c != col]
+    row = ask_choice("facet rows by", left, None) if left else None
+    averaged = [c for c in left if c != row]
     print(f"averaging over: {averaged or 'nothing'}")
 
-    results = results.assign(**{c: results[c].astype(str) for c in (hue, facet) if c})
+    results = results.assign(**{c: results[c].astype(str) for c in (hue, col, row) if c})
     sns.set_theme(style="whitegrid", palette="colorblind")
-    grid = sns.relplot(data=results, x=x, y=y, hue=hue, col=facet,
+    grid = sns.relplot(data=results, x=x, y=y, hue=hue, col=col, row=row,
                        kind="line", marker="o", height=4, aspect=1.1)
     grid.set_axis_labels(x, y)
-    path = out_dir / ask("filename", f"{y}_vs_{x}_hue-{hue}_col-{facet}.png")
+    path = out_dir / ask("filename", f"{y}_vs_{x}_hue-{hue}_col-{col}_row-{row}.png")
     grid.savefig(path, dpi=150)
     print(f"saved {path}")
     if ask("show plot? y/n", "n").lower() == "y":
