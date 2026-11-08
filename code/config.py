@@ -41,8 +41,14 @@ class Config:
     persona_trait: str = "careless"  # which trait to steer with (any of persona_traits)
     vectors_dir: str = "vectors"  # relative to the cwd (run from code/)
     layer: int = 19
-    alpha: float = 1  # paper's default coef; the vector norm at layer 19 (row 20) is ~23 for 'outgoing'
-    steering_mode: str = "persona"  # 'persona' | 'random' (matched norm) | 'none'
+    # Every steer vector (persona or random) is rescaled to this norm; the steering shift is
+    # alpha * steer_vector_norm. 20 ~ raw persona-vector norms at layer 19 (~23 for 'outgoing'),
+    # so alpha keeps its old meaning. 1.0 would make alpha the shift magnitude itself.
+    steer_vector_norm: float = 20.0
+    alpha: float = 1  # steering coefficient
+    # 'persona': steer + measure persona vector. 'random': steer + measure a seeded random
+    # vector (same norm). 'none': no steering, measure the persona vector (baseline).
+    steering_mode: str = "persona"  # 'persona' | 'random' | 'none'
 
     # swarm
     n_agents: int = 16

@@ -15,7 +15,7 @@ from pathlib import Path
 import pandas as pd
 import torch
 
-from agent import generate_reply, load_persona_vector, load_replica
+from agent import generate_reply, load_persona_vector, load_replica, scale_to_norm
 from config import CFG, REPLICA_FIELDS, Config
 
 
@@ -49,13 +49,15 @@ def hop_distances(n_agents, edges, sources):
     return hops
 
 
-def random_matched_norm(vector, seed):
-    generator = torch.Generator().manual_seed(seed)
-    noise = torch.randn(vector.shape, generator=generator)
-    return noise * vector.norm() / noise.norm()
+def random_vector(hidden_size, norm, seed):
+    return scale_to_norm(torch.randn(hidden_size, generator=torch.Generator().manual_seed(seed)), norm)
 
 
-def run_swarm(cfg, replicas, persona_vector, steer_vector):
+def measured_vector_name(cfg):
+    return f"random_s{cfg.seed}" if cfg.steering_mode == "random" else f"persona:{cfg.persona_trait}"
+
+
+def run_swarm(cfg, replicas, measure_vector, steer_vector):
     n = cfg.n_agents
     edges = build_edges(cfg)
     in_neighbors = {i: {s for s, d in edges if d == i} for i in range(n)}
@@ -81,7 +83,7 @@ def run_swarm(cfg, replicas, persona_vector, steer_vector):
         steered = steer_vector is not None and i in cfg.source_agents
         text, measurement = generate_reply(
             replicas[i % len(replicas)], histories[i], cfg,
-            steer_vector if steered else None, persona_vector,
+            steer_vector if steered else None, measure_vector,
         )
         histories[i].append({"role": "assistant", "content": text})
         print(  # single call so threads on different GPUs don't interleave mid-message
@@ -113,6 +115,7 @@ def run_swarm(cfg, replicas, persona_vector, steer_vector):
         rows.extend(turn_rows)
     run_metadata = {
         "persona_trait": cfg.persona_trait, "layer": cfg.layer, "alpha": cfg.alpha,
+        "steer_vector_norm": cfg.steer_vector_norm, "measured_vector": measured_vector_name(cfg),
         "steering_mode": cfg.steering_mode, "n_agents": cfg.n_agents,
         "topology": cfg.topology, "n_turns": cfg.n_turns,
         "seed_prompt": cfg.seed_prompt, "temperature": cfg.temperature, "seed": cfg.seed,
@@ -161,15 +164,17 @@ def main():
         if replicas is None:  # sequential: loading isn't thread-safe
             replicas = [load_replica(CFG, device) for device in CFG.devices]
         torch.manual_seed(cfg.seed)
-        persona_vector = load_persona_vector(cfg.persona_vector_path, cfg.layer)
-        steer_vector = {
-            "persona": persona_vector,
-            "random": random_matched_norm(persona_vector, cfg.seed),
-            "none": None,
+        persona_vector = load_persona_vector(cfg.persona_vector_path, cfg.layer, cfg.steer_vector_norm)
+        random_vec = random_vector(persona_vector.shape[0], cfg.steer_vector_norm, cfg.seed)  # once per run
+        steer_vector, measure_vector = {  # (steer with, measure against)
+            "persona": (persona_vector, persona_vector),
+            "random": (random_vec, random_vec),
+            "none": (None, persona_vector),
         }[cfg.steering_mode]
-        results, histories = run_swarm(cfg, replicas, persona_vector, steer_vector)
+        results, histories = run_swarm(cfg, replicas, measure_vector, steer_vector)
         out_dir.mkdir(parents=True, exist_ok=True)
-        (out_dir / f"{name}_config.json").write_text(json.dumps(dataclasses.asdict(cfg), indent=2))
+        config_record = {**dataclasses.asdict(cfg), "measured_vector": measured_vector_name(cfg)}
+        (out_dir / f"{name}_config.json").write_text(json.dumps(config_record, indent=2))
         (out_dir / f"{name}_transcripts.json").write_text(json.dumps(histories, indent=2))
         results.to_csv(out_dir / f"{name}.csv", index=False)  # last: its existence marks the run done
         print(results.drop(columns=["system_prompt", "seed_prompt", "received", "text"]).to_string())

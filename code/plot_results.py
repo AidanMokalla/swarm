@@ -10,8 +10,10 @@ import seaborn as sns
 
 from config import CFG
 
-METADATA = ["steering_mode", "persona_trait", "layer", "alpha", "n_agents", "topology", "n_turns",
+METADATA = ["steering_mode", "persona_trait", "layer", "alpha", "steer_vector_norm", "n_agents", "topology", "n_turns",
             "temperature", "seed", "hop_isolated", "source_agents"]
+# all metrics use the UNIT measured vector (cos / projection), so they compare across modes;
+# in 'random' mode the measured vector is the random one (see the `measured_vector` column)
 METRICS = ["prompt_proj", "prompt_cos", "gen_proj", "gen_cos"]
 X_AXES = ["hop", "turn"]
 

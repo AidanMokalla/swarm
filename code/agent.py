@@ -36,10 +36,16 @@ def load_replica(cfg, device):
     return Replica(model, tokenizer, device)
 
 
-def load_persona_vector(path, layer):
-    """Returns float32 [hidden] vector for decoder layer `layer`."""
+def scale_to_norm(vector, norm):
+    """THE place vectors get their magnitude: steer vectors all have norm cfg.steer_vector_norm,
+    so alpha * vector has the same size whatever the trait (or random direction)."""
+    return vector.float() * (norm / vector.float().norm())
+
+
+def load_persona_vector(path, layer, norm):
+    """Returns float32 [hidden] vector for decoder layer `layer`, rescaled to `norm`."""
     vector = torch.load(path, map_location="cpu").float()
-    return vector[layer + 1] if vector.ndim == 2 else vector
+    return scale_to_norm(vector[layer + 1] if vector.ndim == 2 else vector, norm)
 
 
 def _encode(tokenizer, messages, add_generation_prompt):
@@ -116,7 +122,8 @@ def generate_reply(replica, messages, cfg, steer_vector=None, measure_vector=Non
 @torch.no_grad()
 def extract_persona_vector(replica, trait_chats, neutral_chats, cfg):
     """Diff-in-means at cfg.layer over response tokens. Each chat = messages ending
-    with an assistant reply. Save the result with torch.save (1-D [hidden] format)."""
+    with an assistant reply. Returns a 1-D [hidden] vector with norm cfg.steer_vector_norm
+    (save with torch.save; loading rescales again, which is a no-op)."""
     def mean_activation(chats):
         means = []
         for chat in chats:
@@ -126,4 +133,5 @@ def extract_persona_vector(replica, trait_chats, neutral_chats, cfg):
             means.append(hidden[0, n_prompt:].float().mean(0).cpu())
         return torch.stack(means).mean(0)
 
-    return mean_activation(trait_chats) - mean_activation(neutral_chats)
+    diff = mean_activation(trait_chats) - mean_activation(neutral_chats)
+    return scale_to_norm(diff, cfg.steer_vector_norm)
