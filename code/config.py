@@ -14,9 +14,9 @@ class Config:
     # Format: (("alpha", (1, 2, 4)), ("persona_trait", ("outgoing", "solitary")))
     # steering_mode 'none' ignores alpha, so it is run once per remaining combo (see swarm.py).
     sweep: Tuple[Tuple[str, Tuple[Any, ...]], ...] = (
-        ("steering_mode", ("persona", "random", "none")),
-        ("alpha", (1, 2)),
-        ("persona_trait", ("outgoing", "solitary")),
+        ("steering_mode", ("persona", "random",)),
+        ("alpha", (-1, 0, 1, 2)),
+        ("persona_trait", ("outgoing", "calm")),
     )  # swept values replace the base values below; other candidates: seed, layer, topology, n_agents
 
 

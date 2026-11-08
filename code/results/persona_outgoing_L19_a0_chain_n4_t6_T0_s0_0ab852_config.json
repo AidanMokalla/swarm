@@ -1,0 +1,48 @@
+{
+  "sweep": [],
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "cache_dir": null,
+  "dtype": "bfloat16",
+  "devices": [
+    "cuda:0",
+    "cuda:1",
+    "cuda:2",
+    "cuda:3"
+  ],
+  "persona_dataset": "xiachongfeng/persona",
+  "persona_traits": [
+    "inventive",
+    "consistent",
+    "dependable",
+    "careless",
+    "outgoing",
+    "solitary",
+    "compassionate",
+    "self-interested",
+    "nervous",
+    "calm"
+  ],
+  "vector_kind": "response_avg_diff",
+  "persona_trait": "outgoing",
+  "vectors_dir": "vectors",
+  "layer": 19,
+  "alpha": 0,
+  "steering_mode": "persona",
+  "n_agents": 4,
+  "topology": "chain",
+  "custom_edges": [],
+  "source_agents": [
+    0
+  ],
+  "n_turns": 6,
+  "hop_isolated": true,
+  "system_prompts": [
+    "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+  ],
+  "seed_prompt": "Share your thoughts on how people should handle conflict with a rival.",
+  "max_new_tokens": 128,
+  "temperature": 0.0,
+  "seed": 0,
+  "output_dir": "results",
+  "plot_facet": "persona_trait"
+}
