@@ -7,6 +7,21 @@ REPLICA_FIELDS = ("model_id", "dtype", "devices", "cache_dir")
 
 # hi :)
 
+# Funnel topology: agents per layer (source first); ids are consecutive by layer. THE place to
+# edit it: n_agents, custom_edges and layer_sizes below all derive from it.
+LAYER_SIZES = (1, 8, 6, 4, 2, 1)
+
+
+def layered_edges(sizes):
+    """Directed edges, full bipartite from each layer to the next (forward only)."""
+    starts = [sum(sizes[:k]) for k in range(len(sizes))]
+    return tuple(
+        (src, dst)
+        for k in range(len(sizes) - 1)
+        for src in range(starts[k], starts[k] + sizes[k])
+        for dst in range(starts[k + 1], starts[k + 1] + sizes[k + 1])
+    )
+
 @dataclass(frozen=True)
 class Config:
     # Sweep: tuple of (field_name, values) pairs; any Config field except REPLICA_FIELDS and
@@ -52,9 +67,10 @@ class Config:
     steering_mode: str = "persona"  # 'persona' | 'random' | 'none'
 
     # swarm
-    n_agents: int = 32
-    topology: str = "star"  # 'chain' | 'ring' | 'star' | 'full' | 'custom'
-    custom_edges: Tuple[Tuple[int, int], ...] = ()  # (src, dst); used if topology == 'custom'
+    layer_sizes: Tuple[int, ...] = LAYER_SIZES  # funnel layers; informational (edges/n_agents use LAYER_SIZES)
+    n_agents: int = sum(LAYER_SIZES)
+    topology: str = "custom"  # 'chain' | 'ring' | 'star' | 'full' | 'custom'
+    custom_edges: Tuple[Tuple[int, int], ...] = layered_edges(LAYER_SIZES)  # (src, dst); used if topology == 'custom'
     source_agents: Tuple[int, ...] = (0,)  # steered (unless mode 'none'), seeded, hop 0
     n_turns: int = 6
     hop_isolated: bool = True  # True: only in-neighbors' latest msgs; False: all unseen msgs
