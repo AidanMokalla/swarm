@@ -15,8 +15,8 @@ class Config:
     # steering_mode 'none' ignores alpha, so it is run once per remaining combo (see swarm.py).
     sweep: Tuple[Tuple[str, Tuple[Any, ...]], ...] = (
         ("steering_mode", ("persona", "random",)),
-        ("alpha", (-1, 0, 1, 2)),
-        ("persona_trait", ("outgoing", "calm")),
+        ("alpha", (-2, -1, 0, 1, 2)),
+        ("persona_trait", ("outgoing", "calm", "careless", "self-interested", "solitary")),
     )  # swept values replace the base values below; other candidates: seed, layer, topology, n_agents
 
 
@@ -45,8 +45,8 @@ class Config:
     steering_mode: str = "persona"  # 'persona' | 'random' (matched norm) | 'none'
 
     # swarm
-    n_agents: int = 4
-    topology: str = "chain"  # 'chain' | 'ring' | 'star' | 'full' | 'custom'
+    n_agents: int = 16
+    topology: str = "full"  # 'chain' | 'ring' | 'star' | 'full' | 'custom'
     custom_edges: Tuple[Tuple[int, int], ...] = ()  # (src, dst); used if topology == 'custom'
     source_agents: Tuple[int, ...] = (0,)  # steered (unless mode 'none'), seeded, hop 0
     n_turns: int = 6
