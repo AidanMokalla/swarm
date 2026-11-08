@@ -52,9 +52,9 @@ class Config:
     steering_mode: str = "persona"  # 'persona' | 'random' | 'none'
 
     # swarm
-    n_agents: int = 32
-    topology: str = "star"  # 'chain' | 'ring' | 'star' | 'full' | 'custom'
-    custom_edges: Tuple[Tuple[int, int], ...] = ()  # (src, dst); used if topology == 'custom'
+    n_agents: int = 4
+    topology: str = "custom"  # 'chain' | 'ring' | 'star' | 'full' | 'custom'
+    custom_edges: Tuple[Tuple[int, int], ...] = ((0,1),(0,2),(1,3),(2,3))  # (src, dst); used if topology == 'custom'
     source_agents: Tuple[int, ...] = (0,)  # steered (unless mode 'none'), seeded, hop 0
     n_turns: int = 6
     hop_isolated: bool = True  # True: only in-neighbors' latest msgs; False: all unseen msgs

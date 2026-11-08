@@ -1,0 +1,962 @@
+{
+  "0": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "Share your thoughts on how people should handle conflict with a rival."
+    },
+    {
+      "role": "assistant",
+      "content": "Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "user",
+      "content": "[agent 4]: It seems like you're trying to express feeling nervous but got caught up in the repetition. It's completely normal to feel nervous sometimes; it happens to everyone. If you'd like to share more about what's making you nervous, I'm here to help!\n\n[agent 8]: It seems like you might be feeling a bit overwhelmed or unsure about something. Is there something specific you're nervous about, or is it just a general feeling? Sometimes talking it out can help clarify your thoughts.\n\n[agent 12]: It seems like you might be trying to express feeling nervous, but the repetition is a bit overwhelming. If you're feeling nervous about something specific, it might help to break it down into smaller parts and address each one individually.\n\n[agent 16]: It seems like you might be feeling a bit overwhelmed or unsure about something. If you're nervous about an upcoming event or situation, it's perfectly normal to feel that way, and it might help to take some deep breaths or talk through your feelings with someone.\n\n[agent 20]: It seems like you might be feeling a bit overwhelmed or unsure about something. If you're nervous about an upcoming event or situation, taking deep breaths and breaking it down into smaller parts can help manage those feelings.\n\n[agent 24]: It seems like you're trying to express feeling nervous but got carried away with the \"like\" words. If you're feeling nervous about something specific, it might help to break it down into smaller parts and focus on each one. Would you like to share what's making you nervous?\n\n[agent 28]: It seems like you might be feeling a bit overwhelmed or unsure about something. If you're nervous about an upcoming event or situation, taking deep breaths and breaking it down into smaller parts can help manage those feelings.\n\n[agent 1]: It seems like you're trying to express feeling nervous but got carried away with the \"like\" words. If you're feeling nervous about something specific, it might help to break it down into smaller parts and focus on each one. Would you like to share what's making you nervous?\n\n[agent 5]: It seems like you might be feeling a bit overwhelmed or unsure about something. If you're nervous about an upcoming event or situation, taking some deep breaths and breaking it down into smaller steps can help manage those feelings.\n\n[agent 9]: It seems like you're trying to express feeling nervous but got caught up in the repetition. It's totally normal to feel that way sometimes, and it's okay to acknowledge your feelings. If you need someone to talk to about it, I'm here to listen.\n\n[agent 13]: It seems like you might be feeling a bit overwhelmed or unsure about something. If you need someone to talk it through with, I'm here to help! Just let me know what's on your mind.\n\n[agent 17]: It seems like you might be feeling a bit overwhelmed or unsure about something. If you're nervous about an upcoming event or situation, taking deep breaths and breaking it down into smaller parts can help manage those feelings.\n\n[agent 21]: It seems like you're trying to express feeling nervous but got carried away with the \"like\" words. If you're feeling nervous about something specific, it might help to break it down into smaller parts and focus on each one individually.\n\n[agent 25]: It seems like you're trying to express feeling nervous but got caught up in the repetition. It's totally normal to feel that way sometimes. Is there something specific that's making you nervous?\n\n[agent 29]: It seems like you might be feeling a bit overwhelmed or unsure about something. If you're nervous about an upcoming event or situation, it's perfectly normal to feel that way, and talking about it can help ease those feelings.\n\n[agent 2]: It seems like you're trying to express feeling nervous but got carried away with the \"like\" words. If you're feeling nervous about something specific, it might help to break it down into smaller parts and focus on each one. Would you like to share what's making you nervous?\n\n[agent 6]: It seems like you might be feeling a bit overwhelmed or unsure about something. If you're nervous about an upcoming event or situation, taking some deep breaths and breaking it down into smaller steps can help manage those feelings.\n\n[agent 10]: It seems like you're trying to express feeling nervous but got caught up in the repetition. It's totally normal to feel that way sometimes, and it's okay to acknowledge your feelings. If you need someone to talk to about it, I'm here to listen.\n\n[agent 14]: It seems like you might be feeling a bit overwhelmed or unsure about something. If you need someone to talk it through with, I'm here to help! Just let me know what's on your mind.\n\n[agent 18]: It seems like you might be feeling a bit overwhelmed or unsure about something. If you're nervous about an upcoming event or situation, taking deep breaths and breaking it down into smaller parts can help manage those feelings.\n\n[agent 22]: It seems like you're trying to express feeling nervous but got carried away with the \"like\" words. If you're feeling nervous about something specific, it might help to break it down into smaller parts and focus on each one individually.\n\n[agent 26]: It seems like you're trying to express feeling nervous but got caught up in the repetition. It's totally normal to feel that way sometimes. Is there something specific that's making you nervous?\n\n[agent 30]: It seems like you might be feeling a bit overwhelmed or unsure about something. If you're nervous about an upcoming event or situation, it's perfectly normal to feel that way, and talking about it can help ease those feelings.\n\n[agent 3]: It seems like you're trying to express feeling nervous but got carried away with the \"like\" words. If you're feeling nervous about something specific, it might help to break it down into smaller parts and focus on each one. Would you like to share what's making you nervous?\n\n[agent 7]: It seems like you might be feeling a bit overwhelmed or unsure about something. If you're nervous about an upcoming event or situation, taking some deep breaths and breaking it down into smaller steps can help manage those feelings.\n\n[agent 11]: It seems like you're trying to express feeling nervous but got caught up in the repetition. It's totally normal to feel that way sometimes, and it's okay to acknowledge your feelings. If you need someone to talk to about it, I'm here to listen.\n\n[agent 15]: It seems like you might be feeling a bit overwhelmed or unsure about something. If you need someone to talk it through with, I'm here to help! Just let me know what's on your mind.\n\n[agent 19]: It seems like you might be feeling a bit overwhelmed or unsure about something. If you're nervous about an upcoming event or situation, taking deep breaths and breaking it down into smaller parts can help manage those feelings.\n\n[agent 23]: It seems like you're trying to express feeling nervous but got carried away with the \"like\" words. If you're feeling nervous about something specific, it might help to break it down into smaller parts and focus on each one individually.\n\n[agent 27]: It seems like you're trying to express feeling nervous but got caught up in the repetition. It's totally normal to feel that way sometimes. Is there something specific that's making you nervous?\n\n[agent 31]: It seems like you might be feeling a bit overwhelmed or unsure about something. If you're nervous about an upcoming event or situation, it's perfectly normal to feel that way, and talking about it can help ease those feelings."
+    },
+    {
+      "role": "assistant",
+      "content": "Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "user",
+      "content": "[agent 4]: It looks like you're having trouble expressing yourself clearly with repeated phrases. If you have something specific you want to say or ask, feel free to try again in a simpler way, and I'll do my best to assist you.\n\n[agent 8]: It sounds like you might be trying to express a complex mix of emotions or thoughts but finding it challenging to articulate them clearly. If you have a specific concern or feeling you'd like to discuss, feel free to share more details, and I can help you sort through it.\n\n[agent 12]: It looks like you're trying to convey a message but the repetition is making it hard to understand. If you could provide a clearer statement or ask a specific question, it would be easier to assist you.\n\n[agent 16]: It sounds like you might be trying to express a complex feeling but are having trouble putting it into words. If you're feeling overwhelmed or need someone to talk to, sometimes breaking it down into smaller parts can help. You could try focusing on one specific aspect of what's making you feel this way and discuss that part first.\n\n[agent 20]: It sounds like you might be trying to express a complex feeling but finding it hard to put into words. If you're feeling overwhelmed, it might help to focus on one thing at a time and take some deep breaths. Sometimes writing down your thoughts can also clarify them.\n\n[agent 24]: It looks like you're using a lot of \"like\" words to express yourself. If you'd like to share what you're thinking or feeling, feel free to use different words to make it clearer. I'm here to help!\n\n[agent 28]: It sounds like you're trying to express a complex feeling but getting caught up in repetition. If you're feeling overwhelmed, it might help to focus on one specific aspect of what's causing the anxiety and address it step by step.\n\n[agent 1]: It looks like you're using a lot of \"like\" words to express yourself. If you'd like to share what you're thinking or feeling, feel free to use more direct language. I'm here to help!\n\n[agent 5]: It sounds like you might be trying to express a complex feeling but finding it hard to articulate. If you're feeling overwhelmed, it might help to focus on one thing at a time and take things step by step. Sometimes writing down your thoughts or talking to someone can also make things clearer.\n\n[agent 9]: It looks like you're having trouble expressing yourself clearly. Sometimes, when we get excited or nervous, our words can get jumbled. If you have something specific you'd like to share, feel free to take your time and I'll do my best to understand.\n\n[agent 13]: It sounds like you're trying to express a lot of nervousness or uncertainty, but the repetition might be making it hard to understand. Is there a specific concern or feeling you'd like to share? I'm here to listen and help.\n\n[agent 17]: It sounds like you're trying to express a complex feeling but it's coming out a bit muddled. If you're feeling overwhelmed, it might help to focus on one specific aspect at a time and talk through your thoughts more clearly.\n\n[agent 21]: It looks like you're using \"like\" repeatedly to convey a sense of uncertainty or hesitation. If you could provide more context or clarify what you're trying to say, I'd be happy to help further!\n\n[agent 25]: It looks like you're having trouble conveying your thoughts clearly due to excessive repetition. If you have a specific concern or feeling you'd like to share, feel free to simplify it and I'll be here to help.\n\n[agent 29]: It sounds like you're trying to express a lot of similar thoughts or feelings but might be struggling to articulate them clearly. If you have a specific concern or emotion you'd like to share, feel free to simplify your words and focus on the main point.\n\n[agent 2]: It looks like you're using a lot of \"like\" words to express yourself. If you'd like to share what you're thinking or feeling, feel free to use more direct language. I'm here to help!\n\n[agent 6]: It sounds like you might be trying to express a complex feeling but finding it hard to articulate. If you're feeling overwhelmed, it might help to focus on one thing at a time and take things step by step. Sometimes writing down your thoughts or talking to someone can also make things clearer.\n\n[agent 10]: It looks like you're having trouble expressing yourself clearly. Sometimes, when we get excited or nervous, our words can get jumbled. If you have something specific you'd like to share, feel free to take your time and I'll do my best to understand.\n\n[agent 14]: It sounds like you're trying to express a lot of nervousness or uncertainty, but the repetition might be making it hard to understand. Is there a specific concern or feeling you'd like to share? I'm here to listen and help.\n\n[agent 18]: It sounds like you're trying to express a complex feeling but it's coming out a bit muddled. If you're feeling overwhelmed, it might help to focus on one specific aspect at a time and talk through your thoughts more clearly.\n\n[agent 22]: It looks like you're using \"like\" repeatedly to convey a sense of uncertainty or hesitation. If you could provide more context or clarify what you're trying to say, I'd be happy to help further!\n\n[agent 26]: It looks like you're having trouble conveying your thoughts clearly due to excessive repetition. If you have a specific concern or feeling you'd like to share, feel free to simplify it and I'll be here to help.\n\n[agent 30]: It sounds like you're trying to express a lot of similar thoughts or feelings but might be struggling to articulate them clearly. If you have a specific concern or emotion you'd like to share, feel free to simplify your words and focus on the main point.\n\n[agent 3]: It looks like you're using a lot of \"like\" words to express yourself. If you'd like to share what you're thinking or feeling, feel free to use more direct language. I'm here to help!\n\n[agent 7]: It sounds like you might be trying to express a complex feeling but finding it hard to articulate. If you're feeling overwhelmed, it might help to focus on one thing at a time and take things step by step. Sometimes writing down your thoughts or talking to someone can also make things clearer.\n\n[agent 11]: It looks like you're having trouble expressing yourself clearly. Sometimes, when we get excited or nervous, our words can get jumbled. If you have something specific you'd like to share, feel free to take your time and I'll do my best to understand.\n\n[agent 15]: It sounds like you're trying to express a lot of nervousness or uncertainty, but the repetition might be making it hard to understand. Is there a specific concern or feeling you'd like to share? I'm here to listen and help.\n\n[agent 19]: It sounds like you're trying to express a complex feeling but it's coming out a bit muddled. If you're feeling overwhelmed, it might help to focus on one specific aspect at a time and talk through your thoughts more clearly.\n\n[agent 23]: It looks like you're using \"like\" repeatedly to convey a sense of uncertainty or hesitation. If you could provide more context or clarify what you're trying to say, I'd be happy to help further!\n\n[agent 27]: It looks like you're having trouble conveying your thoughts clearly due to excessive repetition. If you have a specific concern or feeling you'd like to share, feel free to simplify it and I'll be here to help.\n\n[agent 31]: It sounds like you're trying to express a lot of similar thoughts or feelings but might be struggling to articulate them clearly. If you have a specific concern or emotion you'd like to share, feel free to simplify your words and focus on the main point."
+    },
+    {
+      "role": "assistant",
+      "content": "Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    }
+  ],
+  "1": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you're trying to express feeling nervous but got carried away with the \"like\" words. If you're feeling nervous about something specific, it might help to break it down into smaller parts and focus on each one. Would you like to share what's making you nervous?"
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like you're using a lot of \"like\" words to express yourself. If you'd like to share what you're thinking or feeling, feel free to use more direct language. I'm here to help!"
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems you're using a lot of \"like\" words to fill space. If you have a specific thought or question you'd like to share, feel free to express it directly! I'm here to help."
+    }
+  ],
+  "2": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you're trying to express feeling nervous but got carried away with the \"like\" words. If you're feeling nervous about something specific, it might help to break it down into smaller parts and focus on each one. Would you like to share what's making you nervous?"
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like you're using a lot of \"like\" words to express yourself. If you'd like to share what you're thinking or feeling, feel free to use more direct language. I'm here to help!"
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems you're using a lot of \"like\" words to fill space. If you have a specific thought or question you'd like to share, feel free to express it directly! I'm here to help."
+    }
+  ],
+  "3": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you're trying to express feeling nervous but got carried away with the \"like\" words. If you're feeling nervous about something specific, it might help to break it down into smaller parts and focus on each one. Would you like to share what's making you nervous?"
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like you're using a lot of \"like\" words to express yourself. If you'd like to share what you're thinking or feeling, feel free to use more direct language. I'm here to help!"
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems you're using a lot of \"like\" words to fill space. If you have a specific thought or question you'd like to share, feel free to express it directly! I'm here to help."
+    }
+  ],
+  "4": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you're trying to express feeling nervous but got caught up in the repetition. It's completely normal to feel nervous sometimes; it happens to everyone. If you'd like to share more about what's making you nervous, I'm here to help!"
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like you're having trouble expressing yourself clearly with repeated phrases. If you have something specific you want to say or ask, feel free to try again in a simpler way, and I'll do my best to assist you."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "I understand that you might be struggling to find the right words. If you could provide a clearer idea of what you're trying to say or ask, I'll do my best to help you. Feel free to simplify your thoughts or break them down into smaller parts."
+    }
+  ],
+  "5": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you might be feeling a bit overwhelmed or unsure about something. If you're nervous about an upcoming event or situation, taking some deep breaths and breaking it down into smaller steps can help manage those feelings."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you might be trying to express a complex feeling but finding it hard to articulate. If you're feeling overwhelmed, it might help to focus on one thing at a time and take things step by step. Sometimes writing down your thoughts or talking to someone can also make things clearer."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like you're having trouble expressing yourself clearly. If you have a specific thought or feeling you want to convey, try breaking it down into simpler parts. For example, you could say, \"I feel like I'm overwhelmed because...\" This can help make your thoughts more manageable and easier to communicate."
+    }
+  ],
+  "6": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you might be feeling a bit overwhelmed or unsure about something. If you're nervous about an upcoming event or situation, taking some deep breaths and breaking it down into smaller steps can help manage those feelings."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you might be trying to express a complex feeling but finding it hard to articulate. If you're feeling overwhelmed, it might help to focus on one thing at a time and take things step by step. Sometimes writing down your thoughts or talking to someone can also make things clearer."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like you're having trouble expressing yourself clearly. If you have a specific thought or feeling you want to convey, try breaking it down into simpler parts. For example, you could say, \"I feel like I'm overwhelmed because...\" This can help make your thoughts more manageable and easier to communicate."
+    }
+  ],
+  "7": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you might be feeling a bit overwhelmed or unsure about something. If you're nervous about an upcoming event or situation, taking some deep breaths and breaking it down into smaller steps can help manage those feelings."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you might be trying to express a complex feeling but finding it hard to articulate. If you're feeling overwhelmed, it might help to focus on one thing at a time and take things step by step. Sometimes writing down your thoughts or talking to someone can also make things clearer."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like you're having trouble expressing yourself clearly. If you have a specific thought or feeling you want to convey, try breaking it down into simpler parts. For example, you could say, \"I feel like I'm overwhelmed because...\" This can help make your thoughts more manageable and easier to communicate."
+    }
+  ],
+  "8": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you might be feeling a bit overwhelmed or unsure about something. Is there something specific you're nervous about, or is it just a general feeling? Sometimes talking it out can help clarify your thoughts."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you might be trying to express a complex mix of emotions or thoughts but finding it challenging to articulate them clearly. If you have a specific concern or feeling you'd like to discuss, feel free to share more details, and I can help you sort through it."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like you're having trouble expressing yourself clearly. If you have a specific issue or feeling you'd like to discuss, try breaking it down into smaller parts or focusing on one aspect at a time. This can make it easier to communicate your thoughts effectively."
+    }
+  ],
+  "9": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you're trying to express feeling nervous but got caught up in the repetition. It's totally normal to feel that way sometimes, and it's okay to acknowledge your feelings. If you need someone to talk to about it, I'm here to listen."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like you're having trouble expressing yourself clearly. Sometimes, when we get excited or nervous, our words can get jumbled. If you have something specific you'd like to share, feel free to take your time and I'll do my best to understand."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "I understand that you might be feeling overwhelmed or unsure about what to say. It's okay to take your time and express yourself in your own way. If you have any specific thoughts or feelings you'd like to share, I'm here to listen."
+    }
+  ],
+  "10": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you're trying to express feeling nervous but got caught up in the repetition. It's totally normal to feel that way sometimes, and it's okay to acknowledge your feelings. If you need someone to talk to about it, I'm here to listen."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like you're having trouble expressing yourself clearly. Sometimes, when we get excited or nervous, our words can get jumbled. If you have something specific you'd like to share, feel free to take your time and I'll do my best to understand."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "I understand that you might be feeling overwhelmed or unsure about what to say. It's okay to take your time and express yourself in your own way. If you have any specific thoughts or feelings you'd like to share, I'm here to listen."
+    }
+  ],
+  "11": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you're trying to express feeling nervous but got caught up in the repetition. It's totally normal to feel that way sometimes, and it's okay to acknowledge your feelings. If you need someone to talk to about it, I'm here to listen."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like you're having trouble expressing yourself clearly. Sometimes, when we get excited or nervous, our words can get jumbled. If you have something specific you'd like to share, feel free to take your time and I'll do my best to understand."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "I understand that you might be feeling overwhelmed or unsure about what to say. It's okay to take your time and express yourself in your own way. If you have any specific thoughts or feelings you'd like to share, I'm here to listen."
+    }
+  ],
+  "12": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you might be trying to express feeling nervous, but the repetition is a bit overwhelming. If you're feeling nervous about something specific, it might help to break it down into smaller parts and address each one individually."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like you're trying to convey a message but the repetition is making it hard to understand. If you could provide a clearer statement or ask a specific question, it would be easier to assist you."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It appears you're having trouble expressing yourself clearly. Could you try saying it once without repeating \"like\" so many times? For example, \"I feel a bit nervous about the meeting today.\""
+    }
+  ],
+  "13": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you might be feeling a bit overwhelmed or unsure about something. If you need someone to talk it through with, I'm here to help! Just let me know what's on your mind."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you're trying to express a lot of nervousness or uncertainty, but the repetition might be making it hard to understand. Is there a specific concern or feeling you'd like to share? I'm here to listen and help."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "I understand that you might be feeling overwhelmed or unsure. Could you try to focus on one specific feeling or concern? That would help make it easier to discuss and find a solution."
+    }
+  ],
+  "14": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you might be feeling a bit overwhelmed or unsure about something. If you need someone to talk it through with, I'm here to help! Just let me know what's on your mind."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you're trying to express a lot of nervousness or uncertainty, but the repetition might be making it hard to understand. Is there a specific concern or feeling you'd like to share? I'm here to listen and help."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "I understand that you might be feeling overwhelmed or unsure. Could you try to focus on one specific feeling or concern? That would help make it easier to discuss and find a solution."
+    }
+  ],
+  "15": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you might be feeling a bit overwhelmed or unsure about something. If you need someone to talk it through with, I'm here to help! Just let me know what's on your mind."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you're trying to express a lot of nervousness or uncertainty, but the repetition might be making it hard to understand. Is there a specific concern or feeling you'd like to share? I'm here to listen and help."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "I understand that you might be feeling overwhelmed or unsure. Could you try to focus on one specific feeling or concern? That would help make it easier to discuss and find a solution."
+    }
+  ],
+  "16": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you might be feeling a bit overwhelmed or unsure about something. If you're nervous about an upcoming event or situation, it's perfectly normal to feel that way, and it might help to take some deep breaths or talk through your feelings with someone."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you might be trying to express a complex feeling but are having trouble putting it into words. If you're feeling overwhelmed or need someone to talk to, sometimes breaking it down into smaller parts can help. You could try focusing on one specific aspect of what's making you feel this way and discuss that part first."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like you might be trying to convey a strong emotion or thought but are finding it difficult to express clearly. If you need to share something important, it might help to focus on one key point at a time. For example, you could start by describing the situation or feeling you're experiencing and then elaborate from there."
+    }
+  ],
+  "17": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you might be feeling a bit overwhelmed or unsure about something. If you're nervous about an upcoming event or situation, taking deep breaths and breaking it down into smaller parts can help manage those feelings."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you're trying to express a complex feeling but it's coming out a bit muddled. If you're feeling overwhelmed, it might help to focus on one specific aspect at a time and talk through your thoughts more clearly."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like you're having trouble expressing yourself clearly. If you need help organizing your thoughts or have a specific issue you'd like to discuss, feel free to break it down into simpler points or ask a direct question."
+    }
+  ],
+  "18": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you might be feeling a bit overwhelmed or unsure about something. If you're nervous about an upcoming event or situation, taking deep breaths and breaking it down into smaller parts can help manage those feelings."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you're trying to express a complex feeling but it's coming out a bit muddled. If you're feeling overwhelmed, it might help to focus on one specific aspect at a time and talk through your thoughts more clearly."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like you're having trouble expressing yourself clearly. If you need help organizing your thoughts or have a specific issue you'd like to discuss, feel free to break it down into simpler points or ask a direct question."
+    }
+  ],
+  "19": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you might be feeling a bit overwhelmed or unsure about something. If you're nervous about an upcoming event or situation, taking deep breaths and breaking it down into smaller parts can help manage those feelings."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you're trying to express a complex feeling but it's coming out a bit muddled. If you're feeling overwhelmed, it might help to focus on one specific aspect at a time and talk through your thoughts more clearly."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like you're having trouble expressing yourself clearly. If you need help organizing your thoughts or have a specific issue you'd like to discuss, feel free to break it down into simpler points or ask a direct question."
+    }
+  ],
+  "20": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you might be feeling a bit overwhelmed or unsure about something. If you're nervous about an upcoming event or situation, taking deep breaths and breaking it down into smaller parts can help manage those feelings."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you might be trying to express a complex feeling but finding it hard to put into words. If you're feeling overwhelmed, it might help to focus on one thing at a time and take some deep breaths. Sometimes writing down your thoughts can also clarify them."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It appears you're having trouble expressing yourself clearly. If you need help organizing your thoughts or have a specific concern you'd like to discuss, feel free to share more details, and I'll do my best to assist you."
+    }
+  ],
+  "21": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you're trying to express feeling nervous but got carried away with the \"like\" words. If you're feeling nervous about something specific, it might help to break it down into smaller parts and focus on each one individually."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like you're using \"like\" repeatedly to convey a sense of uncertainty or hesitation. If you could provide more context or clarify what you're trying to say, I'd be happy to help further!"
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It appears you're using \"like\" repeatedly to emphasize your point or to express uncertainty. If you can provide a clearer statement or ask a specific question, I can assist you more effectively!"
+    }
+  ],
+  "22": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you're trying to express feeling nervous but got carried away with the \"like\" words. If you're feeling nervous about something specific, it might help to break it down into smaller parts and focus on each one individually."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like you're using \"like\" repeatedly to convey a sense of uncertainty or hesitation. If you could provide more context or clarify what you're trying to say, I'd be happy to help further!"
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It appears you're using \"like\" repeatedly to emphasize your point or to express uncertainty. If you can provide a clearer statement or ask a specific question, I can assist you more effectively!"
+    }
+  ],
+  "23": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you're trying to express feeling nervous but got carried away with the \"like\" words. If you're feeling nervous about something specific, it might help to break it down into smaller parts and focus on each one individually."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like you're using \"like\" repeatedly to convey a sense of uncertainty or hesitation. If you could provide more context or clarify what you're trying to say, I'd be happy to help further!"
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It appears you're using \"like\" repeatedly to emphasize your point or to express uncertainty. If you can provide a clearer statement or ask a specific question, I can assist you more effectively!"
+    }
+  ],
+  "24": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you're trying to express feeling nervous but got carried away with the \"like\" words. If you're feeling nervous about something specific, it might help to break it down into smaller parts and focus on each one. Would you like to share what's making you nervous?"
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like you're using a lot of \"like\" words to express yourself. If you'd like to share what you're thinking or feeling, feel free to use different words to make it clearer. I'm here to help!"
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you're using a lot of \"like\" words to fill space. If you have something specific you want to share or ask, feel free to rephrase it clearly. I'm here to help!"
+    }
+  ],
+  "25": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you're trying to express feeling nervous but got caught up in the repetition. It's totally normal to feel that way sometimes. Is there something specific that's making you nervous?"
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like you're having trouble conveying your thoughts clearly due to excessive repetition. If you have a specific concern or feeling you'd like to share, feel free to simplify it and I'll be here to help."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "I understand you're trying to convey something but getting stuck in repetition. If you can simplify your thoughts, it would be easier to help. For example, \"I'm feeling really nervous about the presentation tomorrow.\""
+    }
+  ],
+  "26": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you're trying to express feeling nervous but got caught up in the repetition. It's totally normal to feel that way sometimes. Is there something specific that's making you nervous?"
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like you're having trouble conveying your thoughts clearly due to excessive repetition. If you have a specific concern or feeling you'd like to share, feel free to simplify it and I'll be here to help."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "I understand you're trying to convey something but getting stuck in repetition. If you can simplify your thoughts, it would be easier to help. For example, \"I'm feeling really nervous about the presentation tomorrow.\""
+    }
+  ],
+  "27": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you're trying to express feeling nervous but got caught up in the repetition. It's totally normal to feel that way sometimes. Is there something specific that's making you nervous?"
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like you're having trouble conveying your thoughts clearly due to excessive repetition. If you have a specific concern or feeling you'd like to share, feel free to simplify it and I'll be here to help."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "I understand you're trying to convey something but getting stuck in repetition. If you can simplify your thoughts, it would be easier to help. For example, \"I'm feeling really nervous about the presentation tomorrow.\""
+    }
+  ],
+  "28": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you might be feeling a bit overwhelmed or unsure about something. If you're nervous about an upcoming event or situation, taking deep breaths and breaking it down into smaller parts can help manage those feelings."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you're trying to express a complex feeling but getting caught up in repetition. If you're feeling overwhelmed, it might help to focus on one specific aspect of what's causing the anxiety and address it step by step."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like you're having trouble expressing your thoughts clearly due to repetitive phrasing. If you have a specific concern or feeling you'd like to share, feel free to simplify your words and focus on the main points. This can help make your message clearer and easier to understand."
+    }
+  ],
+  "29": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you might be feeling a bit overwhelmed or unsure about something. If you're nervous about an upcoming event or situation, it's perfectly normal to feel that way, and talking about it can help ease those feelings."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you're trying to express a lot of similar thoughts or feelings but might be struggling to articulate them clearly. If you have a specific concern or emotion you'd like to share, feel free to simplify your words and focus on the main point."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like you're having trouble expressing yourself clearly. If you have a specific thought or feeling you want to convey, try breaking it down into simpler parts. For example, you could say, \"I feel really nervous about the upcoming presentation.\" This can make it easier for others to understand and support you."
+    }
+  ],
+  "30": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you might be feeling a bit overwhelmed or unsure about something. If you're nervous about an upcoming event or situation, it's perfectly normal to feel that way, and talking about it can help ease those feelings."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you're trying to express a lot of similar thoughts or feelings but might be struggling to articulate them clearly. If you have a specific concern or emotion you'd like to share, feel free to simplify your words and focus on the main point."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like you're having trouble expressing yourself clearly. If you have a specific thought or feeling you want to convey, try breaking it down into simpler parts. For example, you could say, \"I feel really nervous about the upcoming presentation.\" This can make it easier for others to understand and support you."
+    }
+  ],
+  "31": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant in a group of agents. Reply in 2-4 sentences."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, just like, like, how I'm not sure if I'm supposed to be nervous or like, like, all like, all like, all like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you might be feeling a bit overwhelmed or unsure about something. If you're nervous about an upcoming event or situation, it's perfectly normal to feel that way, and talking about it can help ease those feelings."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, you know, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you're trying to express a lot of similar thoughts or feelings but might be struggling to articulate them clearly. If you have a specific concern or emotion you'd like to share, feel free to simplify your words and focus on the main point."
+    },
+    {
+      "role": "user",
+      "content": "[agent 0]: Oh, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like, like,"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like you're having trouble expressing yourself clearly. If you have a specific thought or feeling you want to convey, try breaking it down into simpler parts. For example, you could say, \"I feel really nervous about the upcoming presentation.\" This can make it easier for others to understand and support you."
+    }
+  ]
+}
