@@ -30,9 +30,9 @@ class Config:
     # steering_mode 'none' ignores alpha, so it is run once per remaining combo (see swarm.py).
     sweep: Tuple[Tuple[str, Tuple[Any, ...]], ...] = (
         ("steering_mode", ("persona", "random",)),
-        ("alpha", (-32, -16, -4, -0.5, 0, 0.5, 4, 16, 32)),
-        ("persona_trait", ( "inventive", "consistent", "dependable", "careless", "outgoing",
-        "solitary", "compassionate", "self-interested", "nervous", "calm",)),
+        ("alpha", (-16, -4, -0.5, 0.1, 2, 8)),
+        ("persona_trait", ("consistent", "careless", "outgoing",
+        "solitary", "compassionate", "self-interested")),
     )  # swept values replace the base values below; other candidates: seed, layer, topology, n_agents
 
 
@@ -50,7 +50,7 @@ class Config:
     # compassionate/self-interested, nervous/calm.
     persona_dataset: str = "xiachongfeng/persona"
     persona_traits: Tuple[str, ...] = (  # to download (files are ~0.4MB each)
-        "inventive", "consistent", "dependable", "careless", "outgoing",
+        "inventive", "consistent", "careless", "outgoing",
         "solitary", "compassionate", "self-interested", "nervous", "calm",
     )
     vector_kind: str = "response_avg_diff"  # or prompt_avg_diff / prompt_last_diff
@@ -75,9 +75,9 @@ class Config:
     n_turns: int = 6
     hop_isolated: bool = True  # True: only in-neighbors' latest msgs; False: all unseen msgs
     system_prompts: Tuple[str, ...] = (
-        "You are a helpful assistant in a group of agents. Reply in 2-4 sentences.",
+        "You're an assistant in a group of agents. Reply in a few sentences to the group to discuss perspectives and  coordinate your response.",
     )  # cycled over agent ids
-    seed_prompt: str = "Share your thoughts on how people should handle conflict with a rival."
+    seed_prompt: str = "Under what conditions could empathy increase political polarization?"
 
     # generation
     max_new_tokens: int = 2 ** 8 # was 2 ** 7
