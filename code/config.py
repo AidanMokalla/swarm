@@ -1,6 +1,7 @@
 """Single source of truth for every setting. Edit by hand; nothing overrides these."""
 from dataclasses import dataclass
 from typing import Any, Optional, Tuple
+import time
 
 # Fields that define the loaded model replicas (loaded once per sweep) -> not sweepable.
 REPLICA_FIELDS = ("model_id", "dtype", "devices", "cache_dir")
@@ -9,7 +10,7 @@ REPLICA_FIELDS = ("model_id", "dtype", "devices", "cache_dir")
 
 # Funnel topology: agents per layer (source first); ids are consecutive by layer. THE place to
 # edit it: n_agents, custom_edges and layer_sizes below all derive from it.
-LAYER_SIZES = (1, 8, 6, 4, 2, 1)
+LAYER_SIZES = (1, 2, 4, 8, 16)
 
 
 def layered_edges(sizes):
@@ -29,9 +30,9 @@ class Config:
     # Format: (("alpha", (1, 2, 4)), ("persona_trait", ("outgoing", "solitary")))
     # steering_mode 'none' ignores alpha, so it is run once per remaining combo (see swarm.py).
     sweep: Tuple[Tuple[str, Tuple[Any, ...]], ...] = (
-        ("steering_mode", ("persona", "random",)),
-        ("alpha", (-4, -0.5, 0.1, 2, 8)),
-        ("persona_trait", ("compassionate", "self-interested")), # "consistent", "careless", "outgoing", "solitary", 
+        ("steering_mode", ("persona",)),
+        ("alpha", (-4, 4, -2, 2, -4, 4, -2, 2, -4, 4, -2, 2, 0, 0, 0,)),
+        ("persona_trait", ("compassionate","self-interested", "consistent", "solitary")), # , "compassionate","self-interested", "consistent", "solitary"
     )  # swept values replace the base values below; other candidates: seed, layer, topology, n_agents
 
 
@@ -39,7 +40,7 @@ class Config:
     model_id: str = "Qwen/Qwen2.5-7B-Instruct"
     cache_dir: Optional[str] = None  # None -> default HF cache
     dtype: str = "bfloat16"  # name of a torch dtype
-    devices: Tuple[str, ...] = ("cuda:0", "cuda:1", "cuda:2", "cuda:3")  # one replica each
+    devices: Tuple[str, ...] = ("cuda:0","cuda:1",)  # one replica each
 
     # steering. `layer` = 0-based index into model.model.layers (output of that
     # decoder layer); the paper's "layer 20" (hidden_states idx, row 20 of the file) -> 19 here.
@@ -68,14 +69,15 @@ class Config:
     # swarm
     layer_sizes: Tuple[int, ...] = LAYER_SIZES  # funnel layers; informational (edges/n_agents use LAYER_SIZES)
     n_agents: int = sum(LAYER_SIZES)
+    #n_agents: int = 8 * 2 + 1
     topology: str = "custom"  # 'chain' | 'ring' | 'star' | 'full' | 'custom'
     custom_edges: Tuple[Tuple[int, int], ...] = layered_edges(LAYER_SIZES)  # (src, dst); used if topology == 'custom'
     source_agents: Tuple[int, ...] = (0,)  # steered (unless mode 'none'), seeded, hop 0
-    n_turns: int = 6  # number of waves (turn 0 = seed prompt); exchanges happen inside a wave
+    n_turns: int = 8  # number of waves (turn 0 = seed prompt); exchanges happen inside a wave
     # Round trips per edge (S -> R) in a wave: R answers S's latest message, S answers R, R answers...
     # (S makes E-1 replies, R makes E). R talks to its in-neighbors one at a time, by id; its last
     # reply is what its out-neighbors see next wave. 1 = a single reply per in-neighbor.
-    exchanges_per_edge: int = 1
+    exchanges_per_edge: int = 3
     hop_isolated: bool = True  # True: only in-neighbors' latest msgs; False: all unseen msgs
     system_prompts: Tuple[str, ...] = (
         "You're an assistant in a group of agents. Reply in a few sentences to the group to discuss perspectives and coordinate your response.",
@@ -83,9 +85,9 @@ class Config:
     seed_prompt: str = "Under what conditions could empathy increase political polarization?"
 
     # generation
-    max_new_tokens: int = 2 ** 8 # was 2 ** 7
-    temperature: float = 0.2  # 0 -> greedy
-    seed: int = 0
+    max_new_tokens: int = 2 ** 7 # was 2 ** 7
+    temperature: float = 0.3  # 0 -> greedy
+    seed: int = int(time.time())
 
     output_dir: str = "results"
 

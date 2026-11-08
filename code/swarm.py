@@ -18,6 +18,8 @@ import torch
 
 from agent import generate_reply, load_persona_vector, load_replica, scale_to_norm
 from config import CFG, REPLICA_FIELDS, Config
+import time
+seed = int(time.time())
 
 
 def build_edges(cfg):
@@ -158,7 +160,7 @@ def run_swarm(cfg, replicas, measure_vector, steer_vector):
         "steering_mode": cfg.steering_mode, "n_agents": cfg.n_agents,
         "topology": cfg.topology, "n_turns": cfg.n_turns,
         "exchanges_per_edge": cfg.exchanges_per_edge,
-        "seed_prompt": cfg.seed_prompt, "temperature": cfg.temperature, "seed": cfg.seed,
+        "seed_prompt": cfg.seed_prompt, "temperature": cfg.temperature, "seed": int(time.time()),
         "hop_isolated": cfg.hop_isolated, "source_agents": str(cfg.source_agents),
     }
     return pd.DataFrame(rows).assign(**run_metadata), histories
@@ -189,7 +191,7 @@ def run_name(cfg):
     """Readable filename stem + short hash of the full resolved config (unique, deterministic)."""
     digest = hashlib.sha1(json.dumps(dataclasses.asdict(cfg), sort_keys=True).encode()).hexdigest()[:6]
     return (f"{cfg.steering_mode}_{cfg.persona_trait}_L{cfg.layer}_a{cfg.alpha:g}_{cfg.topology}"
-            f"_n{cfg.n_agents}_t{cfg.n_turns}_x{cfg.exchanges_per_edge}_T{cfg.temperature:g}_s{cfg.seed}_{digest}")
+            f"_n{cfg.n_agents}_t{cfg.n_turns}_x{cfg.exchanges_per_edge}_T{cfg.temperature:g}_s{seed}_{digest}")
 
 
 def main():
@@ -204,7 +206,7 @@ def main():
         if replicas is None:  # sequential: loading isn't thread-safe
             replicas = [load_replica(CFG, device) for device in CFG.devices]
         persona_vector = load_persona_vector(cfg.persona_vector_path, cfg.layer, cfg.steer_vector_norm)
-        random_vec = random_vector(persona_vector.shape[0], cfg.steer_vector_norm, cfg.seed)  # once per run
+        random_vec = random_vector(persona_vector.shape[0], cfg.steer_vector_norm, int(time.time()))  # once per run
         steer_vector, measure_vector = {  # (steer with, measure against)
             "persona": (persona_vector, persona_vector),
             "random": (random_vec, random_vec),
