@@ -77,9 +77,9 @@ class Config:
     # (S makes E-1 replies, R makes E). R talks to its in-neighbors one at a time, by id; its last
     # reply is what its out-neighbors see next wave. 1 = a single reply per in-neighbor.
     exchanges_per_edge: int = 1
-    hop_isolated: bool = True  # True: only in-neighbors' latest msgs; False: all unseen msgs
+    hop_isolated: bool = False  # True: only in-neighbors' latest msgs; False: all unseen msgs
     system_prompts: Tuple[str, ...] = (
-        "You're an assistant in a group of agents. Reply in a few sentences to the group to discuss perspectives and  coordinate your response.",
+        "You're an assistant in a group of agents. Reply in a few sentences to the group to discuss perspectives and coordinate your response.",
     )  # cycled over agent ids
     seed_prompt: str = "Under what conditions could empathy increase political polarization?"
 
