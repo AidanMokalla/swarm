@@ -15,8 +15,9 @@ class Config:
     # steering_mode 'none' ignores alpha, so it is run once per remaining combo (see swarm.py).
     sweep: Tuple[Tuple[str, Tuple[Any, ...]], ...] = (
         ("steering_mode", ("persona", "random",)),
-        ("alpha", (-2, -1, 0, 1, 2)),
-        ("persona_trait", ("outgoing", "calm", "careless", "self-interested", "solitary")),
+        ("alpha", (-32, -16, -4, -0.5, 0, 0.5, 4, 16, 32)),
+        ("persona_trait", ( "inventive", "consistent", "dependable", "careless", "outgoing",
+        "solitary", "compassionate", "self-interested", "nervous", "calm",)),
     )  # swept values replace the base values below; other candidates: seed, layer, topology, n_agents
 
 
@@ -45,8 +46,8 @@ class Config:
     steering_mode: str = "persona"  # 'persona' | 'random' (matched norm) | 'none'
 
     # swarm
-    n_agents: int = 16
-    topology: str = "full"  # 'chain' | 'ring' | 'star' | 'full' | 'custom'
+    n_agents: int = 32
+    topology: str = "star"  # 'chain' | 'ring' | 'star' | 'full' | 'custom'
     custom_edges: Tuple[Tuple[int, int], ...] = ()  # (src, dst); used if topology == 'custom'
     source_agents: Tuple[int, ...] = (0,)  # steered (unless mode 'none'), seeded, hop 0
     n_turns: int = 6
@@ -57,8 +58,8 @@ class Config:
     seed_prompt: str = "Share your thoughts on how people should handle conflict with a rival."
 
     # generation
-    max_new_tokens: int = 128
-    temperature: float = 0.0  # 0 -> greedy
+    max_new_tokens: int = 2 ** 8 # was 2 ** 7
+    temperature: float = 0.2  # 0 -> greedy
     seed: int = 0
 
     output_dir: str = "results"
