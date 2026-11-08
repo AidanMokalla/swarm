@@ -72,7 +72,11 @@ class Config:
     topology: str = "custom"  # 'chain' | 'ring' | 'star' | 'full' | 'custom'
     custom_edges: Tuple[Tuple[int, int], ...] = layered_edges(LAYER_SIZES)  # (src, dst); used if topology == 'custom'
     source_agents: Tuple[int, ...] = (0,)  # steered (unless mode 'none'), seeded, hop 0
-    n_turns: int = 6
+    n_turns: int = 6  # number of waves (turn 0 = seed prompt); exchanges happen inside a wave
+    # Round trips per edge (S -> R) in a wave: R answers S's latest message, S answers R, R answers...
+    # (S makes E-1 replies, R makes E). R talks to its in-neighbors one at a time, by id; its last
+    # reply is what its out-neighbors see next wave. 1 = a single reply per in-neighbor.
+    exchanges_per_edge: int = 1
     hop_isolated: bool = True  # True: only in-neighbors' latest msgs; False: all unseen msgs
     system_prompts: Tuple[str, ...] = (
         "You're an assistant in a group of agents. Reply in a few sentences to the group to discuss perspectives and  coordinate your response.",

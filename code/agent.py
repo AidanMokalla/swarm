@@ -86,9 +86,11 @@ def _summarize(records, vector):
             "gen_proj": gen_proj, "gen_cos": gen_cos}
 
 
-def derive_seed(base_seed, agent_id, turn):
-    """Deterministic, well-mixed sampling seed per (base seed, agent, turn)."""
-    return int(np.random.SeedSequence([base_seed, agent_id, turn]).generate_state(1)[0])
+def derive_seed(base_seed, agent_id, turn, generation):
+    """Deterministic, well-mixed sampling seed per (base seed, agent, turn, generation), where
+    `generation` counts the agent's own generate calls within that turn (0 for the first).
+    SeedSequence zero-pads its key, so generation 0 equals the old (seed, agent, turn) key."""
+    return int(np.random.SeedSequence([base_seed, agent_id, turn, generation]).generate_state(1)[0])
 
 
 def _seeded_sampler(seed, device, temperature):
@@ -106,11 +108,11 @@ def _seeded_sampler(seed, device, temperature):
 
 
 @torch.no_grad()
-def generate_reply(replica, messages, cfg, steer_vector=None, measure_vector=None, *, agent_id, turn):
+def generate_reply(replica, messages, cfg, steer_vector=None, measure_vector=None, *, agent_id, turn, generation):
     """Reply to chat `messages` (system + history, last = user). Returns (text, measurement).
 
-    Sampling is seeded from derive_seed(cfg.seed, agent_id, turn): distinct per agent and turn,
-    reproducible per config, independent of thread scheduling.
+    Sampling is seeded from derive_seed(cfg.seed, agent_id, turn, generation): distinct per
+    generate call, reproducible per config, independent of thread scheduling.
 
     steer_vector: add cfg.alpha * vector at cfg.layer (None -> unsteered).
     measure_vector: project cfg.layer activations onto it (None -> empty measurement).
@@ -134,7 +136,7 @@ def generate_reply(replica, messages, cfg, steer_vector=None, measure_vector=Non
             temperature=None,  # applied inside the sampler processor instead
             top_p=None, top_k=None,
             logits_processor=LogitsProcessorList([_seeded_sampler(
-                derive_seed(cfg.seed, agent_id, turn), replica.device, cfg.temperature)]) if sampling else None,
+                derive_seed(cfg.seed, agent_id, turn, generation), replica.device, cfg.temperature)]) if sampling else None,
             pad_token_id=replica.tokenizer.eos_token_id,
         )
     finally:
