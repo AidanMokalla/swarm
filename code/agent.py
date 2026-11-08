@@ -13,8 +13,9 @@ Vector file format: torch tensor, [n_layers + 1, hidden] (downloaded format) or 
 import math
 from dataclasses import dataclass
 
+import numpy as np
 import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer, LogitsProcessorList
 
 
 @dataclass
@@ -85,9 +86,31 @@ def _summarize(records, vector):
             "gen_proj": gen_proj, "gen_cos": gen_cos}
 
 
+def derive_seed(base_seed, agent_id, turn):
+    """Deterministic, well-mixed sampling seed per (base seed, agent, turn)."""
+    return int(np.random.SeedSequence([base_seed, agent_id, turn]).generate_state(1)[0])
+
+
+def _seeded_sampler(seed, device, temperature):
+    """Logits processor that draws the next token from its own device generator and masks all
+    other tokens, so HF's internal (global-RNG) multinomial is forced to pick that token.
+    transformers' generate() has no `generator=` arg, and the global RNG is shared by threads."""
+    generator = torch.Generator(device=device).manual_seed(seed)
+
+    def sample(input_ids, scores):
+        probs = torch.softmax(scores.float() / temperature, dim=-1)
+        token = torch.multinomial(probs, 1, generator=generator)
+        return torch.full_like(scores, -torch.inf).scatter(1, token, 0.0)
+
+    return sample
+
+
 @torch.no_grad()
-def generate_reply(replica, messages, cfg, steer_vector=None, measure_vector=None):
+def generate_reply(replica, messages, cfg, steer_vector=None, measure_vector=None, *, agent_id, turn):
     """Reply to chat `messages` (system + history, last = user). Returns (text, measurement).
+
+    Sampling is seeded from derive_seed(cfg.seed, agent_id, turn): distinct per agent and turn,
+    reproducible per config, independent of thread scheduling.
 
     steer_vector: add cfg.alpha * vector at cfg.layer (None -> unsteered).
     measure_vector: project cfg.layer activations onto it (None -> empty measurement).
@@ -107,9 +130,11 @@ def generate_reply(replica, messages, cfg, steer_vector=None, measure_vector=Non
             input_ids,
             attention_mask=torch.ones_like(input_ids),
             max_new_tokens=cfg.max_new_tokens,
-            do_sample=sampling,
-            temperature=cfg.temperature if sampling else None,
+            do_sample=sampling,  # temperature 0 -> greedy: deterministic, seeds irrelevant
+            temperature=None,  # applied inside the sampler processor instead
             top_p=None, top_k=None,
+            logits_processor=LogitsProcessorList([_seeded_sampler(
+                derive_seed(cfg.seed, agent_id, turn), replica.device, cfg.temperature)]) if sampling else None,
             pad_token_id=replica.tokenizer.eos_token_id,
         )
     finally:

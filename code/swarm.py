@@ -83,7 +83,7 @@ def run_swarm(cfg, replicas, measure_vector, steer_vector):
         steered = steer_vector is not None and i in cfg.source_agents
         text, measurement = generate_reply(
             replicas[i % len(replicas)], histories[i], cfg,
-            steer_vector if steered else None, measure_vector,
+            steer_vector if steered else None, measure_vector, agent_id=i, turn=turn,
         )
         histories[i].append({"role": "assistant", "content": text})
         print(  # single call so threads on different GPUs don't interleave mid-message
@@ -163,7 +163,6 @@ def main():
             continue
         if replicas is None:  # sequential: loading isn't thread-safe
             replicas = [load_replica(CFG, device) for device in CFG.devices]
-        torch.manual_seed(cfg.seed)
         persona_vector = load_persona_vector(cfg.persona_vector_path, cfg.layer, cfg.steer_vector_norm)
         random_vec = random_vector(persona_vector.shape[0], cfg.steer_vector_norm, cfg.seed)  # once per run
         steer_vector, measure_vector = {  # (steer with, measure against)
