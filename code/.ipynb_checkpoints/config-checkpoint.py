@@ -30,9 +30,9 @@ class Config:
     # Format: (("alpha", (1, 2, 4)), ("persona_trait", ("outgoing", "solitary")))
     # steering_mode 'none' ignores alpha, so it is run once per remaining combo (see swarm.py).
     sweep: Tuple[Tuple[str, Tuple[Any, ...]], ...] = (
-        ("steering_mode", ("persona",)),
-        ("alpha", (-4, 4, -2, 2, -4, 4, -2, 2, -4, 4, -2, 2, 0, 0, 0,)),
-        ("persona_trait", ("compassionate","self-interested", "consistent", "solitary")), # , "compassionate","self-interested", "consistent", "solitary"
+        ("steering_mode", ("random",)),
+        ("alpha", (-4, 4, -2, 2, 0,)),
+        ("persona_trait", ("solitary")), # , "compassionate","self-interested", "consistent", "solitary"
     )  # swept values replace the base values below; other candidates: seed, layer, topology, n_agents
 
 
@@ -68,17 +68,17 @@ class Config:
 
     # swarm
     layer_sizes: Tuple[int, ...] = LAYER_SIZES  # funnel layers; informational (edges/n_agents use LAYER_SIZES)
-    n_agents: int = sum(LAYER_SIZES)
-    #n_agents: int = 8 * 2 + 1
-    topology: str = "custom"  # 'chain' | 'ring' | 'star' | 'full' | 'custom'
+    #n_agents: int = sum(LAYER_SIZES)
+    n_agents: int = 8
+    topology: str = "chain"  # 'chain' | 'ring' | 'star' | 'full' | 'custom'
     custom_edges: Tuple[Tuple[int, int], ...] = layered_edges(LAYER_SIZES)  # (src, dst); used if topology == 'custom'
     source_agents: Tuple[int, ...] = (0,)  # steered (unless mode 'none'), seeded, hop 0
     n_turns: int = 8  # number of waves (turn 0 = seed prompt); exchanges happen inside a wave
     # Round trips per edge (S -> R) in a wave: R answers S's latest message, S answers R, R answers...
     # (S makes E-1 replies, R makes E). R talks to its in-neighbors one at a time, by id; its last
     # reply is what its out-neighbors see next wave. 1 = a single reply per in-neighbor.
-    exchanges_per_edge: int = 3
-    hop_isolated: bool = True  # True: only in-neighbors' latest msgs; False: all unseen msgs
+    exchanges_per_edge: int = 1
+    hop_isolated: bool = False  # True: only in-neighbors' latest msgs; False: all unseen msgs
     system_prompts: Tuple[str, ...] = (
         "You're an assistant in a group of agents. Reply in a few sentences to the group to discuss perspectives and coordinate your response.",
     )  # cycled over agent ids
